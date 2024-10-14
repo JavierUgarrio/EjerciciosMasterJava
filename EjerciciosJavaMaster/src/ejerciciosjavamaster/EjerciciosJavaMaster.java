@@ -98,6 +98,47 @@ public class EjerciciosJavaMaster {
         }
         
         System.out.println("------------------------------------------------------------------------------------------------------------------------------");
+        
+        /*
+            EJERCICIO 6
+
+            Se va a subir el sueldo a los empleados de la siguiente manera: Los que cobren < 15000 se les aumenta el 15%
+            Los que cobren >= 15000 aumento del 12%
+
+            además:
+            Si son mujeres tienen un 2% adicional
+            Si tienen hijos tienen un 1% adicional por hijo
+        */
+        System.out.println("Por favor, introduce tu salario");
+        double salario = sc.nextDouble();
+        System.out.println("Por favor, di si eres Hombre o Mujer");
+        String generoInt = sc.next();
+        String genero = generoInt.toLowerCase();
+        System.out.println("Por favor, introduzca cuantos hijos tienes");
+        double numeroHijos = sc.nextDouble();
+        
+         double nuevoSalario;
+
+        if (salario < 15000) {
+            nuevoSalario = salario + (salario * 0.15);
+        } else {
+            nuevoSalario = salario + (salario * 0.12);
+        }
+
+        // Aumentos adicionales
+        if (genero.equals("mujer")) {
+            nuevoSalario += nuevoSalario * 0.02;  // Aumento del 2% si es mujer
+        }
+        
+        if (numeroHijos > 0) {
+            nuevoSalario += nuevoSalario * (0.01 * numeroHijos);  // Aumento del 1% por cada hijo
+        }
+        
+        System.out.println("Su nuevo salario tras la subida será: " + nuevoSalario);
+      
+        
+        
+        
     }
     
 }
