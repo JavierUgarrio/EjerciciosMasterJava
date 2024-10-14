@@ -29,7 +29,7 @@ public class EjerciciosJavaMaster {
         }else{
             System.out.println("el numero es impar");
         }
-        
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------");
         /*
             EJERCICIO 2
 
@@ -48,7 +48,7 @@ public class EjerciciosJavaMaster {
         }else{
             System.out.println("los numeros son iguales");
         }
-        
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------");
         /*
             EJERCICIO 3
 
@@ -70,6 +70,34 @@ public class EjerciciosJavaMaster {
         }else{ 
             System.out.println("salida");
         }
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------");
+        
+        /*
+            Ejercicio 4
+            Ver si un número es par y múltiplo de 3 y que saque mensajes del tipo: Es par y múltiplo de 3
+
+            Es impar y múltiplo de 3
+            No es múltiplo de 3 pero es par 
+            No es ni par ni múltiplo de 3
+        */
+        System.out.println("Por favor, introduce un numero");
+        int num6 = sc.nextInt();
+        
+        
+        int resultadoPar = num6 % 2;
+        int resultadoMultiplo3= num6 % 3;
+        
+        if(resultadoPar == 0 & resultadoMultiplo3 ==0){
+            System.out.println("El numero introducido es par y multiplo de 3");
+        }else if(resultadoPar != 0 & resultadoMultiplo3 ==0){
+            System.out.println("Es impar y multiplo de 3");
+        }else if(resultadoPar == 0 & resultadoMultiplo3 !=0){
+            System.out.println("No es multiplo de 3 pero es par ");
+        }else{
+            System.out.println("No es ni par ni multiplo de 3");
+        }
+        
+        System.out.println("------------------------------------------------------------------------------------------------------------------------------");
     }
     
 }
