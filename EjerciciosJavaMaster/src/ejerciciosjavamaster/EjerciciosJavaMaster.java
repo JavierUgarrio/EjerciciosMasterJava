@@ -49,6 +49,27 @@ public class EjerciciosJavaMaster {
             System.out.println("los numeros son iguales");
         }
         
+        /*
+            EJERCICIO 3
+
+            Comparar tres números y decir cuál es el mayor
+        */
+        System.out.println("Por favor, introduce un numero");
+        int num3 = sc.nextInt();
+        System.out.println("Por favor, introduce un segundo numero");
+        int num4 = sc.nextInt();
+        System.out.println("Por favor, introduce un tercer numero");
+        int num5 = sc.nextInt();
+        
+        if(num3 > num4 & num3>num5){
+            System.out.println("El primer numero introducido: " + num3 + " es mayor que el resto de numeros: "+ num4 + " , "+num5);
+        }else if(num4> num3 & num4>num5){
+            System.out.println("El segundo numero introducido: " + num4 + " es mayor que el resto de numeros: "+ num3 + " , "+num5);
+        }else if(num5 > num3 & num5 > num4){
+            System.out.println("El segundo numero introducido: " + num5 + " es mayor que el resto de numeros: "+ num3 + " , "+num4);
+        }else{ 
+            System.out.println("salida");
+        }
     }
     
 }
