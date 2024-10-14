@@ -30,6 +30,25 @@ public class EjerciciosJavaMaster {
             System.out.println("el numero es impar");
         }
         
+        /*
+            EJERCICIO 2
+
+            Comparar dos números y decir cuál es el mayor
+        */
+        
+        System.out.println("Por favor, introduce un numero");
+        int num1 = sc.nextInt();
+        System.out.println("Por favor, introduce un segundo numero");
+        int num2 = sc.nextInt();
+        
+        if(num1 > num2){
+            System.out.println("El primer numero introducido: "+ num1+ " es mayor que: "+ num2);
+        }else if(num1 < num2){
+            System.out.println("El primer numero introducido: "+ num1+ " es menor que: "+ num2);
+        }else{
+            System.out.println("los numeros son iguales");
+        }
+        
     }
     
 }
