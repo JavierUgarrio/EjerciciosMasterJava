@@ -204,6 +204,15 @@ public class EjerciciosArrays {
 
             {0, 0, 0, 0}, {1, 1, 1, 1}, {6, 6, 6, -1} };
         */
+        int[][] numeros = new int[][]{ {3, 4, 5, 78},
+
+            {0, 0, 0, 0}, {1, 1, 1, 1}, {6, 6, 6, -1} };
+        
+       for(int[] columnas : numeros){
+           for(int filas : columnas){
+               System.out.println(filas);
+           }
+       }
     }
     
 }
