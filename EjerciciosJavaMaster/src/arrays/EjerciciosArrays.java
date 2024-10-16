@@ -47,7 +47,6 @@ public class EjerciciosArrays {
             Para este ejercicio utilizar un bucle que recorra el array y utilizar el operador %.
         */
         
-<<<<<<< HEAD
         int numerosEnt []= new int[5];
         numerosEnt[0]= 4;
         numerosEnt[1]= 5;
@@ -116,8 +115,7 @@ public class EjerciciosArrays {
             System.out.println("el nuevo array: "+ numeros);
         }
         
-=======
->>>>>>> origin/develop
+
     }
     
 }
