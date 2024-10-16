@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package estructurasIterativas;
 
 /**
@@ -27,6 +24,25 @@ public class EstructurasIterativas {
         }
 
         System.out.println("El factorial de " + num + " es: " + factorial);
+        
+        /*
+            EJERCICIO 2
+
+            Calcular la potencia de 2 elevado a 8
+        */
+        
+        double num1 =2;
+        double it = 1;
+        while(it <=8){
+          
+            it++;
+            
+            if(it == 8){
+                double potencia = Math.pow(num1, it);
+                System.out.println("la potencia de 2 elevado a 8 es: " + potencia);
+            }
+        }
+       
         
         
     }
