@@ -115,7 +115,95 @@ public class EjerciciosArrays {
             System.out.println("el nuevo array: "+ numeros);
         }
         
+        /*
+            EJERCICIO 5
 
+            Dado los siguientes arrays, hacer un bloque de código que construya un array de la siguiente manera:
+
+            char[] cars1 = new char[]{‘1′,’2′,’3′,’4′,’5′,’6’};
+
+            char[] cars2 = new char[]{‘a’,’e’,’r’,’t’,’y’,’u’};
+            El array resultado que se debe de construir es el siguiente:
+
+            char[] result = new char[]{‘1′,’a’,’2′,’e’,’3′,’r’,’4′,’t’,’5′,’y’,’6′,’u’};
+        */
+        char[] cars1 = new char[]{'1','2','3','4','5','6'};
+
+        char[] cars2 = new char[]{'a','e','r','t','y','u'};
+           
+        char[] result = new char[12];
+        
+        // Usar un bucle para alternar los elementos entre cars1 y cars2
+        for (int i = 0; i < cars1.length; i++) {
+            // Copiar un elemento de cars1 en la posición 2*i de result
+            System.arraycopy(cars1, i, result, 2 * i, 1);
+            
+            // Copiar un elemento de cars2 en la posición 2*i + 1 de result
+            System.arraycopy(cars2, i, result, 2 * i + 1, 1);
+        }
+
+        // Imprimir el array result
+        for (char res : result) {
+            System.out.println("El array es " + res);
+        }
+        
+        /*
+            EJERCICIO 6
+
+            Dado el siguiente array, crear un bloque de código que pinte, SOLO, las consonantes que existan en dicho array
+
+            char[] letras = new char[]{‘2′,’f’,’f’,’u’,’u’,’g’,’h’,’i’,’4′};
+        */
+        char[] letras = new char[]{'2','f','f','u','u','g','h','i','4'};
+       
+  
+            char [] vocales1 = new char[5];
+            vocales[0]='a';
+            vocales[1]='e';
+            vocales[2]='i';
+            vocales[3]='o';
+            vocales[4]='u';
+            
+        for(char letra : letras){
+            
+            if(Character.isLetter(letra) == true){
+                
+                if(letra == 'a' ||letra == 'e'||letra == 'i'||letra == 'o'||letra == 'u'){
+                    
+                }else{
+                    System.out.println(letra);
+                }
+            }
+            
+            
+        }
+        
+        /*
+            EJERCICIO 7
+            
+            Dado el siguiente array crear un bloque de código que sume todas las componentes del array, para ello hacer uso de un bucle que vaya obteniendo todos los valores del array
+
+            float[] decimales = new float[]{3.4F,5.67F,12.0F,3.141615F,0.0F};
+        */
+        
+        float[] decimales = new float[]{3.4F,5.67F,12.0F,3.141615F,0.0F};
+        float total=0;
+        for(float decimal : decimales){
+            System.out.println(decimal);
+            total +=decimal;
+        }
+        System.out.println(total);
+        /*
+            EJERCICIO 10
+
+            Dado la siguiente matriz, crear un bloque de código que me pinte sus componentes de la siguiente manera:
+
+            {3 4 5 78} {000 0} {1 1 1 1} {6 6 6 -1}
+
+            El array bidimensional es el siguiente: int[][] numeros = new int[][]{ {3, 4, 5, 78},
+
+            {0, 0, 0, 0}, {1, 1, 1, 1}, {6, 6, 6, -1} };
+        */
     }
     
 }
