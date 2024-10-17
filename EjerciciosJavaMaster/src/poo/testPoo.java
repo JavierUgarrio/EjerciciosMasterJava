@@ -28,6 +28,16 @@ public class testPoo {
         
         cocodrilo.setPatas(2);
         System.out.println(cocodrilo.getPatas());
+        
+        System.out.println("---------------------------------------------------------------------");
+        Areas circulo1 = new Areas(5.2);
+        System.out.println(circulo1.areaCirculo(6));
+        
+        
+            
+        
     }
+    
+    
     
 }
