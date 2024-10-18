@@ -4,10 +4,25 @@
  */
 package poo;
 
-/**
- *
- * @author User
- */
-public class Circulo {
+
+public class Circulo extends Figura {
+
+    public double radio;
+    
+    //Constructor
+    public Circulo(int coordenadaX, int coordenadaY) {
+        super(coordenadaX, coordenadaY);
+    }
+
+    public Circulo(double radio, int coordenadaX, int coordenadaY) {
+        super(coordenadaX, coordenadaY);
+        this.radio = radio;
+    }
+    
+    //metodo sobreescribir
+    @Override
+    public String posicionFigura(){
+        return super.posicionFigura()+" , radio: " + radio;
+    }
     
 }

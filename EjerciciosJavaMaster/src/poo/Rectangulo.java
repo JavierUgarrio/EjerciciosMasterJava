@@ -4,10 +4,19 @@
  */
 package poo;
 
-/**
- *
- * @author User
- */
-public class Rectangulo {
+
+public class Rectangulo extends Figura {
+    int alto;
+    int ancho;
     
+    //Constructor
+    public Rectangulo(int coordenasX, int coordenasY){
+        super(coordenasX, coordenasY);
+    }
+    
+   public Rectangulo(int coordenadaX, int coordenadaY, int ancho, int alto) {
+        super(coordenadaX, coordenadaY);  // Llamada al constructor de la superclase
+        this.ancho = ancho;
+        this.alto = alto;
+    }
 }
