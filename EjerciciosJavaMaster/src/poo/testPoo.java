@@ -16,6 +16,28 @@ public class testPoo {
         
         System.out.println(persona.saludar("Sra", "Mari Carmen"));
         
+        Animal perro = new Animal(4,"Golden Retriever","Mamiferos");
+        Animal pez = new Animal(0,"Trucha", "Pez");
+        Animal cocodrilo = new Animal(4, "Cocodrilo del Nilo","Reptil");
+        
+        perro.setNombre("Labrador");
+        System.out.println(perro.getNombre());
+        
+        pez.setNombre("Atun rojo");
+        System.out.println(pez.toString());
+        
+        cocodrilo.setPatas(2);
+        System.out.println(cocodrilo.getPatas());
+        
+        System.out.println("---------------------------------------------------------------------");
+        Areas circulo1 = new Areas(5.2);
+        System.out.println(circulo1.areaCirculo(6));
+        
+        
+            
+        
     }
+    
+    
     
 }
