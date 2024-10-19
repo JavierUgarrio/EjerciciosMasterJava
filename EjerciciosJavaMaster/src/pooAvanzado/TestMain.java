@@ -24,5 +24,11 @@ public class TestMain {
         System.out.println(calculo.restar(4,6));
         System.out.println(calculo.multiplicar(2,2));
         System.out.println(calculo.dividir(9,3));
+        
+        PlantaTropical orquidea = new PlantaTropical();
+        orquidea.regar(5, 2);
+        
+        Cactus cactusEscritorio = new Cactus();
+        cactusEscritorio.regar(2,1);
     }
 }
