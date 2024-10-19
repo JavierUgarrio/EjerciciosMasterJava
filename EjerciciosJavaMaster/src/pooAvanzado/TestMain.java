@@ -17,5 +17,12 @@ public class TestMain {
         System.out.println(globo2.toString());
         Globo globo3 = new Globo(9234);
         System.out.println(globo3.getReferencia());
+        
+        Calculadora calculo = new Calculadora(6, 9);
+        
+        System.out.println( calculo.sumar(2,6));
+        System.out.println(calculo.restar(4,6));
+        System.out.println(calculo.multiplicar(2,2));
+        System.out.println(calculo.dividir(9,3));
     }
 }
