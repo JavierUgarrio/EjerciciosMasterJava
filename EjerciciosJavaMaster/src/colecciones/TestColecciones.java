@@ -35,6 +35,29 @@ public class TestColecciones {
             Coches coche = iterator.next(); //Dentro del bucle, se llama a iterator.next() para obtener el siguiente elemento de la colección.
             System.out.println(coche);
         }
+       System.out.println("-------------------------------------------------------------------------------------------------------------------");
+    
+       Personas persona1 = new Personas(1209873,"Alvaro","de los pinos",12 );
+       Personas persona2 = new Personas(2349203,"Mateo","de los pinos",10 );
+       Personas persona3 = new Personas(7845230,"Elena","Martin",9 );
+       
+       ArrayList<Personas>hermanos = new ArrayList<>();
+       hermanos.add(persona1);
+       hermanos.add(persona2);
+       hermanos.add(persona3);
+       
+        System.out.println(hermanos);
+       System.out.println("-----------------------------------Recorrer con For ---------------------------------------------------------------");
+       //Recorrer con for
+       for(int i = 0; i < hermanos.size(); i++){
+           Object dni =  hermanos.get(i);
+           System.out.println(dni);
+       }
+       System.out.println("-----------------------------------Recorrer con For each----------------------------------------------------------------");
+       //Recorrer con for each
+       for(Object nombre : hermanos){
+           System.out.println(nombre);
+       }
     
     }
 }
