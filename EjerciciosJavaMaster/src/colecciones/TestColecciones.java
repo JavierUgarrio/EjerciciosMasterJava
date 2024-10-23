@@ -65,6 +65,21 @@ public class TestColecciones {
            Personas persona = it.next();
            System.out.println(persona.toString());
        }
+       /*
+            Cree un programa que almacene la nota de una asignatura de varios alumnos en una colección de tipo Map. El alumno se identificará por su nombre.
+
+            Cada elemento del mapa estará formado por nombre de tipo String y nota de tipo Integer. Utilizar tipos genéricos.
+       */ 
+       System.out.println("-----------------------------------MAP ALUMNO/NOTA ----------------------------------------------------------------");
+       Map matematicas = new HashMap();
+       matematicas.put("Alvaro",10);
+       matematicas.put("Mateo",7);
+       matematicas.put("Elena",9);
        
+       System.out.println("-----------------------------------Recorrer con iterator Map----------------------------------------------------------------");
+       Set<String> nombre = matematicas.keySet();
+       for(String keyNombre : nombre){
+           System.out.println("Nombre: "+ matematicas.keySet()+matematicas.get(keyNombre));
+       }
     }
 }
