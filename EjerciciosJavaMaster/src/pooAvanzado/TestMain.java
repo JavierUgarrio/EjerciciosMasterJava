@@ -30,5 +30,12 @@ public class TestMain {
         
         Cactus cactusEscritorio = new Cactus();
         cactusEscritorio.regar(2,1);
+        
+        Camisa camisa1 = new Camisa("M","Azul Clarito","Algodon");
+        camisa1.getProveedor();
+        String precio = String.valueOf(camisa1.getPrecio());
+        System.out.println("El precio es: " + precio);
+        System.out.println(camisa1.getProveedor());
+        
     }
 }
