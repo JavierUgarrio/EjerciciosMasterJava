@@ -46,7 +46,7 @@ public class TestColecciones {
        hermanos.add(persona2);
        hermanos.add(persona3);
        
-        System.out.println(hermanos);
+       System.out.println(hermanos);
        System.out.println("-----------------------------------Recorrer con For ---------------------------------------------------------------");
        //Recorrer con for
        for(int i = 0; i < hermanos.size(); i++){
@@ -58,6 +58,13 @@ public class TestColecciones {
        for(Object nombre : hermanos){
            System.out.println(nombre);
        }
-    
+       System.out.println("-----------------------------------Recorrer con iterator----------------------------------------------------------------");
+       
+       Iterator<Personas> it = hermanos.iterator();
+       while(it.hasNext()){
+           Personas persona = it.next();
+           System.out.println(persona.toString());
+       }
+       
     }
 }
